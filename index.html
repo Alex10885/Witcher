@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ведьмак - официальный сайт сериала</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -75,21 +76,40 @@
             </div>
             <!-- /.main__content -->
 
-            <div class="series">
-                <div class="card series_1">
-                    <span class="card__subtitle">Серия #1</span>
-                    <h2 class="card__title">Начало конца</h2>
-                </div>
 
-                <div class="card series_2">
-                    <span class="card__subtitle">Серия #2</span>
-                    <h2 class="card__title">Четыре знака</h2>
+            <div class="series">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card series_1">
+                                <span class="card__subtitle">Серия #1</span>
+                                <h2 class="card__title">Начало конца</h2>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card series_2">
+                                <span class="card__subtitle">Серия #2</span>
+                                <h2 class="card__title">Четыре знака</h2>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card series_2">
+                                <span class="card__subtitle">Серия #3</span>
+                                <h2 class="card__title">Четыре знака</h2>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="navigation">
-                    <button class="arrow"></button>
-                </div>
+                <!-- If we need navigation buttons -->
+                <button class="arrow"></button>
             </div>
             <!-- /.series -->
+
+
         </div>
         <!-- /.container -->
     </main>
@@ -114,7 +134,8 @@
         </div>
         <!-- /.container -->
     </footer>
-
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

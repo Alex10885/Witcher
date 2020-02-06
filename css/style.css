@@ -17,10 +17,11 @@ body {
           justify-content: space-between;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right 20%;
 }
 
 .container {
+  width: 95%;
   max-width: 1140px;
   margin: auto;
 }
@@ -153,6 +154,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+  position: relative;
+  max-width: 420px;
 }
 
 .card {
@@ -209,6 +212,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: -35px;
+}
+
+.swiper-container {
+  max-width: 420px;
+  margin-left: 0;
 }
 
 .footer {
